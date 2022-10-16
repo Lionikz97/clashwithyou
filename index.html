@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jangan Begitu </title>
+    <title>Merajuk Ke Tu </title>
 </head>
 <style>
     body {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
         text-align: center;
+        background-image: url(./sayang.gif);
+        
+
     }
 </style>
 
 <body>
-    <h2>Hi, crush</h2>
+    <section class="main">
+    <div><h2>Hi Awak, Nama awak apa?</h2>
+    <input type="text" name="name" id="name">
+    <button>Nama</button>
+    </div>
     <br>
 
-    <img src="crush.png" />
     <br><br><br>
-    Nak berkawan dengan saya tak?
-    <button id="button" onclick="buang()">Taknak</button> <button onclick="chatMe()">Nak</button>
+    Awak Merajuk dengan saya lagi ke?
+    <button id="button" onclick="buang()">Merajuk</button> 
+    <button onclick="chatMe()">X Merajuk la</button>
+    </section>
+   
 </body>
 
 <script>
     function buang() {
-        alert('K Fine. Terpaksa la aku buang button taknak.');
+        nama = name;
+        alert('X pa lah cmtu. Terpaksa la saya buang button merajuk.', nama);
         document.getElementById("button").remove();
     }
 
     function chatMe() {
         alert('Pilihan yang tepat!');
-        window.location.href = 'https://wa.me/60199661497?text=Hi,%20Sayang';
+        window.location.href = 'https://wa.me/60199661497?text=Hi,%20Biy.. Sayang x merajuk pon';
     }
 </script>
 
